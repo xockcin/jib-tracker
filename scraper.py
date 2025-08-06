@@ -12,7 +12,7 @@ options = Options()
 #options.binary_location = browser_path
 options.add_argument('--headless')
 
-song_file = open("song_file.csv", "w", newline='', encoding='utf-8')
+song_file = open("song_file.csv", "a", newline='', encoding='utf-8')
 song_writer = csv.DictWriter(song_file, fieldnames=["title", "artist", "time"])
 
 def connect():
